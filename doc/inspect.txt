@@ -1,0 +1,25 @@
+==============================================================================
+INTRODUCTION        *inspect*
+
+`inspect.vim` is a small vim-only plugin that adds a nvim-style `:Inspect`
+command for highlight groups under the cursor.
+
+This plugin intentionally does not load under nvim.
+
+==============================================================================
+COMMANDS            *inspect-commands*
+
+------------------------------------------------------------------------------
+Inspect             *:Inspect*
+
+:Inspect
+  Print the resolved highlight group stack under the cursor.
+
+:Inspect!
+  Print a more verbose view to `:messages`:
+
+  - Syntax stack (raw syntax groups)
+  - Resolved stack (after following highlight links)
+  - Effective group (final group applied at the cursor)
+
+vim:tw=78:et:sw=2:ts=2:ft=help:norl:nowrap:
